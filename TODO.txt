@@ -1,0 +1,2 @@
+- Move all SVGs to separate files.
+- Social media links for Kevin/Pedro
