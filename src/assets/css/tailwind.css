@@ -2607,6 +2607,10 @@ body {
     padding-right: 2rem;
   }
 
+  .margin-center{
+    margin:auto;
+  }
+
   .sm\:px-\[30px\]{
     padding-left: 30px;
     padding-right: 30px;
@@ -3147,8 +3151,15 @@ body {
     height: 500px;
   }
 
+  .xl\:h-\[100px\]{
+    height: 100px;
+  }
+
   .xl\:w-1\/4{
     width: 25%;
+  }
+  .xl\:w-1\/2{
+    width: 50%;
   }
 
   .xl\:w-2\/12{
