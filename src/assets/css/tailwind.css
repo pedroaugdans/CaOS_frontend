@@ -3127,6 +3127,26 @@ body {
 }
 
 
+
+/****************************************/
+/* Title style in boxes */
+/****************************************/
+.contract-title-style {
+  margin-bottom: 0.75rem; /* equivalent to mb-3 */
+  font-size: 28px; /* equivalent to md:text-[28px] */
+  color: #1f2937; /* equivalent to text-dark in light mode */
+}
+
+/****************************************/
+/* For dark mode */
+@media (prefers-color-scheme: dark) {
+  .contract-title-style {
+    color: #ffffff; /* equivalent to dark:text-white */
+  }
+}
+
+
+
 /****************************************/
 /*Text styles in boxes*/
 /****************************************/
