@@ -16,6 +16,496 @@
   <script src="assets/js/wow.min.js"></script>
   <script>
     new WOW().init();
+
+    const contentArray = [
+      {
+        title: "0. Definitions",
+        sections: [
+          {
+            section: "Licensed Technology",
+            mainText: "\"Licensed Technology\" shall mean the software, documentation, code, materials, and any other intellectual property specified in Appendix A as provided by the Licensor to the Licensee under this Agreement, as well as any updates, modifications, or improvements thereto made by either the Licensor or the Licensee.",
+            commentText: ""
+          },
+          {
+            section: "Licensor",
+            mainText: "\"Licensor\" shall mean the individual, corporation, or other legal entity that owns or controls the intellectual property rights in the Licensed Technology and grants the Licensee a license to use the Licensed Technology under the terms and conditions of this Agreement.",
+            commentText: ""
+          },
+          {
+            section: "Licensee",
+            mainText: "\"Licensee\" shall mean the individual, corporation, or other legal entity that is granted a license to use the Licensed Technology under the terms and conditions of this Agreement.",
+            commentText: ""
+          },
+          {
+            section: "Parties",
+            mainText: "\"Parties\" shall mean the Licensor and the Licensee collectively, and \"Party\" shall mean either the Licensor or the Licensee individually, as the context requires.",
+            commentText: ""
+          },
+          {
+            section: "Affiliate",
+            mainText: "\"Affiliate\" shall mean, with respect to a Party, any entity that directly or indirectly controls, is controlled by, or is under common control with such Party. For purposes of this definition, \"control\" means the power to direct or cause the direction of the management and policies of an entity, whether through the ownership of voting securities, by contract, or otherwise.",
+            commentText: ""
+          },
+          {
+            section: "Employee",
+            mainText: "\"Employee\" shall mean any individual who is employed by either Party or any of its Affiliates on a full-time, part-time, or temporary basis, and who is subject to the direction and control of the employing Party or Affiliate with respect to the time, place, and manner of their work. The term \"Employee\" shall not include Contractors.",
+            commentText: ""
+          },
+          {
+            section: "Contractor",
+            mainText: "\"Contractor\" shall mean any individual or entity that is not an Employee of either Party or any of its Affiliates, but is engaged by a Party or its Affiliate to perform services on their behalf. Contractors may include, but are not limited to, consultants, advisors, or outsourced service providers.",
+            commentText: ""
+          },
+          {
+            section: "Intellectual Property Rights",
+            mainText: "\"Intellectual Property Rights\" means any form of protection afforded anywhere in the world by law to inventions, works, designs, software, trade secrets, confidential information, know-how and other proprietary information and data, including without limitation patents (including re-issues, divisions, continuations and extensions thereof), copyrights, database rights, registered and not-registered design rights, utility models, mask works, as well as applications for any such rights.",
+            commentText: ""
+          },
+          {
+            section: "Application",
+            mainText: "\"Application\" shall mean a product, service, or solution developed by the Licensee that incorporates the Licensed Technology and adds primary and substantial functionality, features, or improvements that are distinct from those provided by the Licensed Technology itself. An Application must have a clear and distinctive goal that goes beyond merely serving as a wrapper, modification, or adaptation of the Licensed Technology.",
+            commentText: ""
+          },
+          {
+            section: "Derivative Work",
+            mainText: "\"Derivative Work\" shall mean any modification, adaptation, translation, improvement, enhancement, or other work based on or derived from the Licensed Technology that does not add primary and substantial functionality, features, or improvements distinct from those provided by the Licensed Technology itself. This includes, without limitation, any product, service, or solution that integrates, incorporates, bundles, wraps, interfaces with, or adapts the Licensed Technology without significantly changing or enhancing its original functionality, features, or purpose.",
+            commentText: ""
+          },
+          {
+            section: "Documentation",
+            mainText: "\"Documentation\" shall mean any user manuals, technical manuals, specifications, or other written materials provided by the Licensor that describe the features, functions, or operation of the Licensed Technology.",
+            commentText: ""
+          },
+          {
+            section: "Feedback",
+            mainText: "\"Feedback\" shall mean any suggestions, comments, ideas, or other information provided by the Licensee to the Licensor regarding the Licensed Technology, including but not limited to bug reports, feature requests, and performance evaluations.",
+            commentText: ""
+          },
+          {
+            section: "Compatible Open-Source Licenses",
+            mainText: "\"Compatible Open-Source Licenses\" shall mean open-source software licenses allowing for the free use, modification, and distribution of the Licensed Technology, without imposing conflicting or additional restrictions. The only valid licenses are: (a) MIT License (b) Apache License 2.0 (c) BSD 3-Clause \"New\" or \"Revised\" License.",
+            commentText: ""
+          },
+          {
+            section: "Non-Compatible Open-Source Licenses",
+            mainText: "\"Non-Compatible Open-Source Licenses\" shall mean any license terms that are inconsistent with or conflict with the terms of this Agreement, including but not limited to the GNU General Public License (GPL), Lesser GPL (LGPL), or the Creative Commons Attribution-ShareAlike License.",
+            commentText: ""
+          },
+          {
+            section: "Fees",
+            mainText: "\"Fees\" shall mean the amounts payable by the Licensee to the Licensor in consideration for the rights and licenses granted under this Agreement.",
+            commentText: ""
+          },
+          {
+            section: "Term",
+            mainText: "\"Term\" shall mean the duration of this Agreement, as specified in Appendix A, commencing on the Effective Date and continuing until the expiration or termination of this Agreement in accordance with its terms.",
+            commentText: ""
+          },
+          {
+            section: "Effective Date",
+            mainText: "\"Effective Date\" shall mean the date on which this Agreement comes into force, as specified in Appendix A or as determined by the mutual execution of this Agreement by both parties.",
+            commentText: ""
+          },
+          {
+            section: "Force Majeure Event",
+            mainText: "\"Force Majeure Event\" shall have the meaning set forth in Section 13.",
+            commentText: ""
+          },
+          {
+            section: "End User",
+            mainText: "\"End User\" shall mean any individual, corporation, or other legal entity that is not a party to this Agreement, but obtains and uses the Application developed by the Licensee, either under the terms of a Compatible License or through a commercial arrangement with the Licensee.",
+            commentText: ""
+          }
+        ]
+      },
+      {
+        title: "1. Object of the Agreement",
+        sections: [
+          {
+            section: "1.1",
+            mainText: "The primary purpose of this Agreement is to delineate the terms under which the Licensor grants the Licensee specific rights pertaining to the use of the Licensed Technology. It is explicitly stated and understood that this Agreement does not grant any rights, privileges, or licenses to any third parties not explicitly mentioned herein.",
+            commentText: "This clause defines the agreement's purpose and scope, clarifying that it only applies to the named parties."
+          },
+          {
+            section: "1.2",
+            mainText: "Under the terms outlined in this Agreement, contingent upon the Licensee's timely payment of Fees as specified in Appendix A, and strict adherence to all other terms and conditions herein, the Licensor grants the Licensee a worldwide, non-exclusive, non-sublicensable, and non-transferable license to use or modify the Licensed Technology, for the sole purposes of creating Application based on the Licensed Technology for and marketing, promoting, licensing, maintaining and supporting such Applications to/for End-User,, subject to the limitations and restrictions set forth in this Agreement.",
+            commentText: "This section outlines the specific rights granted to the Licensee, including usage and modification of the Licensed Technology, subject to payment and compliance with terms."
+          },
+          {
+            section: "1.3",
+            mainText: "All rights bestowed upon the Licensee under this Agreement are conferred solely through licensing and not by sale. These rights are also circumscribed and governed by the terms of this Agreement. This Agreement does not grant any license or other rights in any intellectual property other than the Licensed Technology. No license or rights will arise under this Agreement by implication, estoppel, or any other means. Any attempt at sublicensing that contradicts the terms of this Agreement will be deemed invalid and without effect.",
+            commentText: "This clause emphasizes that the agreement is a license, not a sale, and limits the scope of rights granted to only those explicitly stated."
+          },
+          {
+            section: "1.4",
+            mainText: "The effective period of this Agreement commences both Parties signing this Agreement and the subsequent payment of the Fee by the Licensee. This initiation is contingent upon these dual conditions being met, marking the start of the Term as indicated in Appendix A and continuing for the Term as indicated in Appendix A. Following the conclusion of this Term, the Agreement may be subject to renewal, based on mutual consent of both Parties and contingent upon the Licensee's payment of any applicable renewal fees, as well as their continued compliance with the terms set forth herein.",
+            commentText: "This section defines the agreement's start date, duration, and conditions for renewal."
+          },
+          {
+            section: "1.5",
+            mainText: "The Licensee acknowledges and agrees that any use of the Licensed Technology or any Derivative Work by the Licensee outside the scope of this Agreement shall constitute a material breach of this Agreement and may result in the immediate termination of the license granted herein. The Licensee shall promptly notify the Licensor of any unauthorized use or disclosure of the Licensed Technology and take reasonable steps to prevent further breach of this Agreement.",
+            commentText: "This clause outlines the consequences of unauthorized use of the Licensed Technology and the Licensee's responsibilities in case of a breach."
+          }
+        ]
+      },
+      {
+        title: "2. Intellectual Property",
+        sections: [
+          {
+            section: "2.1",
+            mainText: "The Licensor retains all right, title, and interest, including all Intellectual Property Rights, in and to the Licensed Technology. This Agreement does not grant the Licensee any ownership rights in the Licensed Technology, but only the limited license rights expressly set forth herein. The Licensed Technology is protected by copyright laws, international copyright treaties, and other Intellectual Property Laws and treaties. Any unauthorized copying, modification, distribution, or use of the Licensed Technology is strictly prohibited and may subject the Licensee to legal action.",
+            commentText: "This clause affirms the Licensor's ownership of the Licensed Technology and outlines the legal protections in place."
+          },
+          {
+            section: "2.2",
+            mainText: "The Licensee shall own the Intellectual Property Rights in any Application developed by the Licensee, excluding the Licensed Technology and any Derivative Works. The Licensee is hereby granted the privilege to alter, adapt, and modify the Licensed Technology as necessary to meet specific requirements or objectives. Any Derivative Work based on or derived from the Licensed Technology shall be owned by the Licensor and considered part of the Licensed Technology, subject to the terms and conditions of this Agreement. The Licensee shall have no ownership rights in Derivative Works.",
+            commentText: "This section clarifies ownership rights for applications developed by the Licensee and derivative works based on the Licensed Technology."
+          },
+          {
+            section: "2.3",
+            mainText: "End Users may use, modify, and distribute the Application in accordance with the terms of the applicable Compatible License or commercial agreement, with the licensee, but shall have no rights to the Licensed Technology except as expressly granted in this Agreement.",
+            commentText: "This clause outlines the rights of End Users regarding the Application and their limitations concerning the Licensed Technology."
+          }
+        ]
+      },
+      {
+        title: "3. Fees and Taxes",
+        sections: [
+          {
+            section: "3.1",
+            mainText: "The Licensee shall pay the Licensor the fees specified in Appendix A (the \"Fees\") in accordance with the payment terms set forth therein. If the Licensee fails to pay the Fees within the agreed payment term, the Licensee shall owe Late Payment Charges as specified in Appendix A.",
+            commentText: "This clause outlines the payment obligations of the Licensee and introduces late payment charges."
+          },
+          {
+            section: "3.2",
+            mainText: "All Fees are non-refundable, and the Licensor shall have no obligation to refund any Fees paid by the Licensee, except as expressly provided in this Agreement. The Licensee shall not be entitled for any reason to any set-off, counter-claim, abatement, or other similar deduction to withhold payment of any amount due to the Licensor.",
+            commentText: "This section establishes the non-refundable nature of fees and prohibits withholding of payments."
+          },
+          {
+            section: "3.3",
+            mainText: "All Fees are exclusive of any applicable taxes, levies, or duties, including but not limited to value-added tax, sales tax, or withholding tax. The Licensee shall be responsible for paying all such taxes, levies, or duties associated with the Fees, except for those based on the Licensor's income.",
+            commentText: "This clause clarifies that fees are exclusive of taxes and assigns responsibility for tax payments to the Licensee."
+          },
+          {
+            section: "3.4",
+            mainText: "If the Licensor is required to pay or collect any such taxes, levies, or duties on behalf of the Licensee, the amount payable by the Licensee shall be increased to the extent necessary to ensure that the Licensor receives a sum equal to the Fees it would have received had no such deduction or withholding been required. The Licensor shall provide the Licensee with appropriate tax invoices or receipts evidencing the payment of any such taxes, levies, or duties. The Licensee shall furnish the Licensor with any relevant tax exemption certificates or other documentation required to minimize or eliminate any applicable taxes, levies, or duties.",
+            commentText: "This section outlines the process for handling taxes paid by the Licensor on behalf of the Licensee and the documentation required for tax purposes."
+          }
+        ]
+      },
+      {
+        title: "4. General Provisions",
+        sections: [
+          {
+            section: "4.1",
+            mainText: "Entire Agreement. This Agreement, together with Appendix A, collectively forms the complete and exclusive terms of the arrangement between the Parties. It supersedes all prior or contemporaneous discussions, representations, contracts, including but not limited to previous License Agreements and similar agreements, as well as proposals, whether written or oral, concerning the subject matters herein.",
+            commentText: "This clause establishes the agreement as the sole binding document between the parties."
+          },
+          {
+            section: "4.2",
+            mainText: "Severability. In the event any portion of this Agreement is deemed invalid or unenforceable, such portion shall not limit or otherwise modify or affect any other portion of this Agreement Without limiting the generality of the foregoing, if the scope of any provision contained in this Agreement is too broad to permit enforcement to its fullest extent, such covenant shall be enforced to the maximum extent permitted by law, and the Parties hereby agree that such scope may be judicially modified accordingly.",
+            commentText: "This section ensures that if any part of the agreement is invalid, the rest remains enforceable."
+          },
+          {
+            section: "4.3",
+            mainText: "Modification Waiver. This Agreement is furnished 'as-is' and no amendments to its terms are permissible. The failure of either Party to enforce any provision of this Agreement may not be deemed a waiver of that or any other provision of this Agreement.",
+            commentText: "This clause prohibits modifications to the agreement and clarifies that non-enforcement doesn't constitute waiver."
+          },
+          {
+            section: "4.4",
+            mainText: "Marketing. Licensee agrees that the Licensor may use the Licensee's name, trade name, and trademark in the Licensor's marketing materials and on its website, solely for the purpose of identifying the Licensee as a customer of the Licensor. Such use shall be in accordance with the Licensee's brand guidelines and shall not imply any endorsement or affiliation beyond the scope of this Agreement. The Licensor shall promptly cease any such use upon written request from the Licensee.",
+            commentText: "This section outlines the Licensor's rights to use the Licensee's branding for marketing purposes."
+          },
+          {
+            section: "4.5",
+            mainText: "Compliance with Applicable Laws. In the course of employing the Licensed Technology pursuant to this Agreement, the Licensee shall ensure compliance with all relevant laws and regulations. The Licensee is prohibited from engaging in the renting, leasing, or similar disposal of the Licensed Technology in any manner that contradicts this Agreement. Additionally, the Licensee must refrain from any misappropriation or unauthorized utilization of other products or services offered by the Licensor.",
+            commentText: "This clause requires the Licensee to comply with laws and prohibits unauthorized use or disposal of the Licensed Technology."
+          },
+          {
+            section: "4.6",
+            mainText: "Trademarks. The Licensee shall not remove or alter any copyright, trademark, or other proprietary rights notice(s) contained in any portion of the Licensed Technology. Applications must add primary and substantial functionality to the Licensed Technology so as not to compete with the Licensed Technology.",
+            commentText: "This section protects the Licensor's proprietary notices and requires significant added value in Applications."
+          },
+          {
+            section: "4.7",
+            mainText: "Prohibited Activities. The Licensee shall not use the Licensed Technology for any unlawful purpose, including without limitation the infringement of any third party's Intellectual Property Right or other proprietary rights. The Licensee agrees that it shall not claim any right to or license (except for the license granted pursuant to Section 1.2 above) with respect to the Licensed Technology nor shall the Licensee contest or assist in contesting the Licensor's right, title and interest in and to such the Licensed Technology. Further, the Licensee shall not partake in activities that contribute to or support claims, whether made by the Licensee or any third party, alleging that the Licensed Technology infringes on any patents. The sale of the Licensed Technology or the establishment of a security interest over it is strictly prohibited. Moreover, the distribution of any product, inclusive of the Licensed Technology, shall be conducted strictly in accordance with the permissions explicitly granted by this Agreement.",
+            commentText: "This clause outlines various prohibited activities for the Licensee regarding the Licensed Technology."
+          },
+          {
+            section: "4.8",
+            mainText: "Assignment. The Licensee is barred from assigning or transferring any rights, benefits, or obligations under this Agreement, unless such transfer is part of the sale of its relevant business or assets, or is done with the Licensor's prior written consent, which is not to be unreasonably withheld or delayed. In contrast, the Licensor retains the unencumbered right to assign or transfer any of its rights, benefits, or obligations under this Agreement.",
+            commentText: "This section restricts the Licensee's ability to assign rights while giving the Licensor more flexibility in this regard."
+          },
+          {
+            section: "4.9",
+            mainText: "Injunctive Relief. The Licensee hereby acknowledges that unauthorized disclosure and/or use of any of the Licensed Technology could cause irreparable harm and significant injury to the Licensor that may be difficult to ascertain. Accordingly, the Licensee agrees that, in addition to any other rights and remedies it may have, the Licensor will have the right to seek immediate injunctive relief to enforce the obligations under this Agreement without the necessity of posting a bond or any other security.",
+            commentText: "This clause allows the Licensor to seek immediate legal action for unauthorized use of the Licensed Technology."
+          },
+          {
+            section: "4.10",
+            mainText: "No Representation. The Licensee shall not represent itself as an agent of the Licensor for any purpose, nor give any condition or warranty or make any representation on the Licensor's behalf or commit the Licensor to any contracts. Further, the Licensee shall not make any representations, warranties, guarantees or other commitments with respect to the specifications, features or capabilities of the Licensed Technology or otherwise incur any liability on behalf of the Licensor in any circumstances.",
+            commentText: "This section prohibits the Licensee from acting as or making representations on behalf of the Licensor."
+          },
+          {
+            section: "4.11",
+            mainText: "Audits. The Licensor has the right to audit the Licensee compliance with its obligations under this Agreement. The Licensee shall provide to the Licensor and its personnel, auditors and inspectors such assistance, access and co-operation as they may need and reasonably require.",
+            commentText: "This clause gives the Licensor the right to audit the Licensee's compliance with the agreement."
+          },
+          {
+            section: "4.12",
+            mainText: "Cumulative Remedies. Any remedies specified in this Agreement are cumulative and are not intended to be exclusive of any other remedies to which the Licensor may be entitled at law or equity in case of any breach or threatened breach by the Licensee of any provision of this Agreement, unless such remedies are specifically limited or excluded by the terms of any provision of this Agreement.",
+            commentText: "This section clarifies that the Licensor's remedies are cumulative and not exclusive."
+          },
+          {
+            section: "4.13",
+            mainText: "Survival. Certain provisions of this Agreement are designed to outlast its termination. These provisions, due to their inherent nature or as specifically indicated, will continue to be valid and enforceable even after the termination of this Agreement.",
+            commentText: "This clause ensures that certain provisions of the agreement remain in effect even after termination."
+          }
+        ]
+      },
+      {
+        title: "5. Feedback and Updates",
+        sections: [
+          {
+            section: "5.1",
+            mainText: "The Licensee hereby grants to the Licensor the unrestricted right to freely utilize and disclose any Feedback that the Licensee provides concerning the Licensed Technology. The Licensee acknowledges and agrees that all Feedback may be employed by the Licensor for any purpose, whether commercial, developmental, or otherwise, without any obligation for acknowledgment, compensation, or other consideration to the Licensee. This includes, but is not limited to, the right to develop, copy, publish, modify, enhance, or otherwise make improvements to the Licensed Technology, at the sole discretion of the Licensor. The Licensee recognizes that all Feedback shall be considered non-confidential and the Licensor is free to use such Feedback without any restriction or obligation of confidentiality.",
+            commentText: "This clause grants the Licensor unrestricted rights to use any feedback provided by the Licensee without compensation or confidentiality obligations."
+          },
+          {
+            section: "5.2",
+            mainText: "During the Term, the Licensor may develop and release updates, upgrades, or new versions of the Licensed Technology. The Licensee shall have the right to receive and use such updates, upgrades, or new versions, subject to the terms and conditions of this Agreement.",
+            commentText: "This section outlines the Licensee's right to receive and use updates to the Licensed Technology."
+          },
+          {
+            section: "5.3",
+            mainText: "The Licensee's right to receive and use updates, upgrades, or new versions shall continue until the termination of this Agreement, as outlined in Section 8. Upon termination, the Licensee shall have no further right to receive any updates, upgrades, or new versions of the Licensed Technology.",
+            commentText: "This clause specifies that the right to receive updates ends with the termination of the agreement."
+          },
+          {
+            section: "5.4",
+            mainText: "All updates, upgrades, or new versions of the Licensed Technology provided to the Licensee shall be considered part of the Licensed Technology and subject to the terms and conditions of this Agreement, unless otherwise specified by the Licensor in writing.",
+            commentText: "This section clarifies that all updates are subject to the same terms as the original Licensed Technology."
+          },
+          {
+            section: "5.5",
+            mainText: "Notwithstanding the Licensee's right to receive updates, upgrades, or new versions, the Licensor is under no obligation to develop or release any such updates, upgrades, or new versions. The development and release of updates, upgrades, or new versions shall be at the sole discretion of the Licensor.",
+            commentText: "This clause states that while the Licensee has the right to receive updates, the Licensor is not obligated to produce them."
+          }
+        ]
+      },
+      {
+        title: "6. End User Rights and Obligations",
+        sections: [
+          {
+            section: "6.1",
+            mainText: "End Users who obtain the Application, either under a Compatible Open-Source License or through a commercial arrangement with the Licensee, may use, modify, and distribute the Application, subject to the terms and conditions of the applicable Compatible Open-Source License or commercial agreement. However, End Users shall have no right to use, modify, or distribute the Licensed Technology, or any part thereof, except as incorporated in the Application and subject to the terms and conditions of this Agreement.",
+            commentText: "This clause outlines the rights and limitations of End Users regarding the Application and Licensed Technology."
+          },
+          {
+            section: "6.2",
+            mainText: "The Licensee shall include a prominent notice in the Application's documentation, user interface, and source code, stating the following:<br><br><strong style='color: red; background-color: yellow; padding: 5px;'>IMPORTANT NOTICE: This Application is built upon the [Licensed Technology Name], which is owned by [Licensor Name] and used under license. As an End User of this Application, you are prohibited from using, modifying, or distributing the [Licensed Technology Name], or any part thereof, except as incorporated in this Application. Specifically, you may not:</strong><br><br>a) Extract, isolate, or separate the [Licensed Technology Name] from this Application;<br>b) Use the [Licensed Technology Name] for any purpose other than as part of this Application;<br>c) Modify, adapt or translate the [Licensed Technology Name];<br>d) Create any Derivative Works based on the [Licensed Technology Name];<br>e) Distribute, sublicense, rent, lease, lend, or transfer the [Licensed Technology Name] to any third party;<br>f) Reverse engineer, decompile, disassemble, or attempt to derive the source code of the [Licensed Technology Name]; or<br>g) Remove, obscure, or alter any copyright, trademark, or other proprietary rights notices contained within the [Licensed Technology Name].<br><br><strong style='color: red; background-color: yellow; padding: 5px;'>Your use of this Application is subject to your compliance with these restrictions. If you have any questions about these terms, please contact [Licensee Name].</strong><br><br>The Licensee shall include a copy of this notice in all copies or substantial portions of the Application.",
+            commentText: "This section requires the Licensee to include a prominent notice detailing restrictions on End Users' use of the Licensed Technology."
+          },
+          {
+            section: "6.3",
+            mainText: "End Users must comply with all applicable laws, regulations, and third-party rights when using, modifying, or distributing the Application.",
+            commentText: "This clause requires End Users to comply with all relevant laws and regulations when using the Application."
+          },
+          {
+            section: "6.4",
+            mainText: "The Licensee shall indemnify, defend, and hold harmless the Licensor from and against any claims, damages, liabilities, costs, and expenses arising out of or in connection with any use of the Application by End Users, including any use that breaches the terms and conditions of this Agreement.",
+            commentText: "This section outlines the Licensee's obligation to indemnify the Licensor against claims arising from End Users' use of the Application."
+          }
+        ]
+      },
+      {
+        title: "7. Use of Non-Compatible Open-Source Licenses",
+        sections: [
+          {
+            section: "7.1",
+            mainText: "In adherence to the terms of this Agreement, the Licensee is expressly prohibited from, and shall not permit any third party or End User to, integrate, distribute, or otherwise utilize the Licensed Technology in conjunction with any code, software, or content that is subject to a license incompatible with the terms of this Agreement, hereafter referred to as \"Non-Compatible Open-Source Licenses\". Such prohibitive action includes, but is not limited to, any combination or use that would necessitate, either directly or indirectly, that the Licensed Technology be subject or conform to any licensing terms other than those explicitly set forth in this Agreement.",
+            commentText: "This clause prohibits the use of the Licensed Technology with any Non-Compatible Open-Source Licenses, ensuring that the Licensed Technology remains subject only to the terms of this Agreement."
+          }
+        ]
+      },
+      {
+        title: "8. Termination",
+        sections: [
+          {
+            section: "8.1",
+            mainText: "This Agreement may be terminated without cause by either Party upon written notice to the other Party, provided such notice period is no less than three (3) months.",
+            commentText: "This clause allows either party to terminate the agreement without cause, given a three-month notice period."
+          },
+          {
+            section: "8.2",
+            mainText: "Either Party may terminate this Agreement with immediate effect, if the other Party commits a material breach of the terms of this Agreement and has not remedied such breach upon the non-breaching Party's written notice within a reasonable timeframe, which shall be no less than thirty (30) days).",
+            commentText: "This section permits immediate termination in case of a material breach, given a 30-day remedy period."
+          },
+          {
+            section: "8.3",
+            mainText: "The Licensor may also immediately terminate this Agreement upon written notice to the Licensee if the Licensee becomes bankrupt, insolvent, enters into liquidation, or undergoes debt restructuring.",
+            commentText: "This clause allows the Licensor to terminate the agreement immediately if the Licensee faces financial difficulties."
+          }
+        ]
+      },
+      {
+        title: "9. Rights and Duties upon Termination",
+        sections: [
+          {
+            section: "9.1",
+            mainText: "Upon termination of this Agreement, the Licensee's rights to use or modify the Licensed Technology, and to create Derivative Works based on the Licensed Technology, shall immediately cease, except as provided in Section 9.2.",
+            commentText: "This clause outlines the general cessation of rights upon termination, with an exception noted in Section 9.2."
+          },
+          {
+            section: "9.2",
+            mainText: "In the event that this Agreement is terminated by either Party without cause pursuant to Section 8.1, or by the Licensor due to the Licensee's bankruptcy, insolvency, liquidation, or debt restructuring pursuant to Section 8.3, or upon the conclusion of the Term as specified in Section 1.4, the Licensee shall retain the right to continue using the Licensed Technology, limited to the version in use immediately prior to the termination date, solely for the purpose of maintaining and supporting existing Applications. The Licensee shall have no right to receive any updates, modifications, or improvements to the Licensed Technology made by the Licensor after the termination date.",
+            commentText: "This section specifies conditions under which the Licensee may continue using the Licensed Technology for maintenance and support purposes after termination."
+          },
+          {
+            section: "9.3",
+            mainText: "In the event that this Agreement is terminated by either Party due to a material breach by the other Party pursuant to Section 8.2, the Licensee's right to continue using the Licensed Technology as described in Section 9.2 shall not apply, and all rights granted to the Licensee under this Agreement shall immediately terminate.",
+            commentText: "This clause states that in case of termination due to material breach, the Licensee loses all rights to use the Licensed Technology."
+          },
+          {
+            section: "9.4",
+            mainText: "Expiry or termination of this Agreement shall not relieve the Licensee of its obligation to pay any Fees accrued or payable to the Licensor prior to the effective date of termination, and the Licensee shall pay to the Licensor all such Fees within 30 days from the effective date of termination.",
+            commentText: "This section outlines the Licensee's obligation to pay any outstanding fees after termination."
+          },
+          {
+            section: "9.5",
+            mainText: "The Licensee acknowledges and agrees that, following the termination of this Agreement, it shall remain bound by its obligations under this Agreement with respect to any use of the Licensed Technology, including in Applications already distributed, and shall ensure that such use remains in compliance with the terms of this Agreement.",
+            commentText: "This clause emphasizes that certain obligations continue even after termination, particularly regarding already distributed Applications."
+          }
+        ]
+      },
+      {
+        title: "10. Notices",
+        sections: [
+          {
+            section: "10.1",
+            mainText: "Any notice given by one Party to the other shall be deemed properly given and deemed received if specifically acknowledged by the receiving Party in writing. Additionally, any notice issued by the Licensor to the Licensee using the email address provided by the Licensee to the Licensor will be effective from the moment it was sent. Each communication and document made or delivered by one Party to the other Party pursuant to this Agreement shall be in the language specified in Appendix A.",
+            commentText: "This clause outlines the requirements for effective notice between parties, including acknowledgment, email notices, and language requirements."
+          }
+        ]
+      },
+      {
+        title: "11. Warranty Disclaimers",
+        sections: [
+          {
+            section: "11.1",
+            mainText: "THE LICENSED TECHNOLOGY, INCLUDING ALL SOFTWARE, DOCUMENTATION, INFORMATION, CONTENT, MATERIALS, CODE, AND RELATED SERVICES, ARE PROVIDED BY THE LICENSOR ON AN \"AS IS\" AND \"AS AVAILABLE\" BASIS. THE LICENSOR AND ITS AFFILIATES HEREBY DISCLAIM ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. SPECIFICALLY, THE LICENSOR AND ITS AFFILIATES MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, REGARDING THE LICENSED TECHNOLOGY, INCLUDING BUT NOT LIMITED TO IMPLIED OR STATUTORY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT OF INTELLECTUAL PROPERTY OR OTHER PROPRIETARY RIGHTS, AND ALL WARRANTIES ARISING FROM COURSE OF DEALING, USAGE, OR TRADE PRACTICE. THE LICENSOR AND ITS AFFILIATES DO NOT WARRANT THAT THE LICENSED TECHNOLOGY, OR ANY PRODUCTS OR RESULTS OF THE USE THEREOF, WILL MEET LICENSEE'S OR ANY OTHER PERSON'S REQUIREMENTS, OPERATE WITHOUT INTERRUPTION, ACHIEVE ANY INTENDED RESULT, BE COMPATIBLE OR WORK WITH ANY SOFTWARE, SYSTEM, OR OTHER SERVICES, OR BE SECURE, ACCURATE, COMPLETE, FREE OF HARMFUL CODE, OR ERROR-FREE AT THE TIME OF THIS AGREEMENT OR AT ANY TIME IN THE FUTURE. FURTHER, THE LICENSOR AND ITS AFFILIATES DO NOT WARRANT THAT THE LICENSED TECHNOLOGY IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. THE PARTIES ACKNOWLEDGE AND AGREE THAT THE FOREGOING WARRANTY DISCLAIMERS ARE AN ESSENTIAL ELEMENT IN SETTING CONSIDERATION UNDER THIS AGREEMENT.",
+            commentText: "This clause provides a comprehensive disclaimer of warranties for the Licensed Technology, stating that it is provided 'as is' and without any guarantees of performance, compatibility, or freedom from errors or harmful components."
+          }
+        ]
+      },
+      {
+        title: "12. Limitation of Liability",
+        sections: [
+          {
+            section: "12.1",
+            mainText: "TO THE FULL EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR WILL NOT BE LIABLE FOR ANY LOST PROFITS, LOSS OF SAVINGS, LOSS OR CORRUPTION OF DATA, LOSS OR INTERRUPTION OF BUSINESS, LOSS OF GOODWILL OR REPUTATION, CLAIMS MADE BY ANY END-USER OR ANY OTHER THIRD PARTY, OR ANY OTHER INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR PUNITIVE COSTS, DAMAGES, OR EXPENSES OF ANY KIND ARISING UNDER OR IN CONNECTION WITH THIS AGREEMENT. FURTHER, THE LICENSOR'S AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE TOTAL AMOUNTS PAID (IF ANY) TO THE LICENSOR UNDER THIS AGREEMENT DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENTS GIVING RISE TO THE LIABILITY. SEEKING DAMAGES AS LIMITED BY THIS SECTION SHALL BE THE SOLE AND EXCLUSIVE REMEDY TO THE LICENSEE FOR ANY ACT OR OMISSION OF THE LICENSOR. THESE LIMITATIONS OF LIABILITY AND EXCLUSIONS OF POTENTIAL DAMAGES WERE AN ESSENTIAL ELEMENT IN SETTING CONSIDERATION UNDER THIS AGREEMENT.",
+            commentText: "This clause limits the Licensor's liability for various types of damages and sets a cap on total liability. It also establishes this limitation as the sole remedy for the Licensee and as a key consideration in the agreement."
+          }
+        ]
+      },
+      {
+        title: "13. Force Majeure",
+        sections: [
+          {
+            section: "13.1",
+            mainText: "Neither Party shall be liable to the other for any delay or non-performance of its obligations hereunder in the event and to the extent that such delay or non-performance is due to an event beyond a Party's reasonable control and without the fault or negligence of such Party. Such causes may include, but are not limited to, any God, terrorist attack, destruction of all available copies of the Licensed Technology, governmental actions such as changes in law or embargoes, cyberattacks including but not limited to significant DDoS attacks or other cybersecurity breaches that disrupt services, critical infrastructure failure involving essential utilities including but not limited to electricity or internet services, but in every case the failure to perform must be beyond the control and without the fault or negligence of the affected Party and cannot be avoided or circumvented by such party (\"Force Majeure Event\"). In the occurrence of any such event, the affected Party shall notify the other Party as soon as reasonably possible and shall use all reasonable endeavors to mitigate the effects of the Force Majeure Event. If the Force Majeure Event results in a delay or non-performance of a Party for a period of three (3) months or longer, then either Party shall have the right to terminate this Agreement with immediate effect without any liability (except for the obligations of payment arising prior to the Force Majeure Event) towards the other Party.",
+            commentText: "This clause defines Force Majeure events, outlines the parties' responsibilities during such events, and provides for termination rights if the event persists for an extended period."
+          }
+        ]
+      },
+      {
+        title: "14. Indemnification",
+        sections: [
+          {
+            section: "14.1",
+            mainText: "Under this Agreement, the Licensee agrees to indemnify, defend, and hold harmless the Licensor, its officers, directors, employees, agents, affiliates, successors, and assigns from any liabilities, damages, judgments, awards, losses, costs, expenses, including reasonable attorney and expert witness fees, arising out of or in connection with any third-party claims, suits, actions, or proceedings. This indemnity covers claims resulting from the Licensee's breach of this Agreement, negligence, willful misconduct, use of the Licensed Technology, or related to the Licensee's products. Excluded from this indemnification are claims alleging that the Licensee's authorized use of unmodified Licensed Technology provided by the Licensor infringes any patent, trademark, or copyright. The Licensor reserves the right, at its option and sole discretion, to assume full control of the defense of such claims with legal counsel of its choice. The Licensee is not permitted to enter into any third-party agreement that would affect the Licensor's rights, constitute an admission of fault by the Licensor, or bind the Licensor in any manner, without the Licensor's prior written consent. The Licensee must promptly notify the Licensor in writing of any claims brought against the Licensor for which indemnification or defense is sought, thereby enabling the Licensor to manage legal strategies and potential settlements effectively. For the avoidance of doubt, the Licensor does not have any obligation to defend the Licensee or any End-User against such claim and therefore such defense shall be up to the Licensor's sole discretion. If the Licensor decides to not defend a claim for infringement of Intellectual Property Rights, the Licensee may defend itself through counsel of its own choice and at its own expense. The Licensor shall have no liability for any costs, expenses, losses or damages incurred by the Licensee or any of its End-Users in the event of such claim.",
+            commentText: "This clause outlines the Licensee's obligation to indemnify the Licensor against various claims, specifies exceptions, and details the process for handling such claims. It also clarifies the Licensor's rights and limitations regarding the defense of claims."
+          }
+        ]
+      },
+      {
+        title: "15. Governing Law and Jurisdiction",
+        sections: [
+          {
+            section: "15.1",
+            mainText: "The Licensor and the Licensee hereby mutually concur that the governance and interpretation of this Agreement shall be in strict accordance with the legal statutes and principles as stipulated in Appendix A.",
+            commentText: "This clause specifies that the agreement will be governed and interpreted according to the laws outlined in Appendix A, which is agreed upon by both parties."
+          }
+        ]
+      },
+      {
+        title: "17. Confidentiality",
+        sections: [
+          {
+            section: "17.1",
+            mainText: "During the term of this Agreement and thereafter until Confidential Information becomes subject to one or more of the exceptions set forth in Section 17.3, each Party shall maintain strict confidentiality regarding the other Party's Confidential Information. \"Confidential Information\" shall include, but is not limited to, the Licensed Technology, trade secrets, business plans, strategies, customer information, and any other proprietary or sensitive information disclosed by one Party to the other.",
+            commentText: "This clause defines Confidential Information and establishes the obligation to maintain confidentiality."
+          },
+          {
+            section: "17.2",
+            mainText: "Each Party agrees to use the Confidential Information solely for the purposes of exercising its rights and fulfilling its obligations under this Agreement. The receiving Party shall not disclose or permit access to Confidential Information to any third party, except to its Employees, Contractors, or agents who need to know such information for the purposes of this Agreement and who are bound by confidentiality obligations no less protective than those set forth herein.",
+            commentText: "This section outlines the permitted use of Confidential Information and restrictions on its disclosure."
+          },
+          {
+            section: "17.3",
+            mainText: "The confidentiality obligations shall not apply to information that: (a) is or becomes publicly available through no fault of the receiving Party; (b) was known to the receiving Party prior to disclosure; (c) is independently developed by the receiving Party without use of or reference to the Confidential Information; or (d) is required to be disclosed by law or court order, provided that the receiving Party gives prompt notice to the disclosing Party to enable it to seek a protective order.",
+            commentText: "This clause specifies exceptions to the confidentiality obligations."
+          }
+        ]
+      }
+    ];
+
+    function formatSectionWithComment(section) {
+      return `
+    <div class="item-container">
+      <div class="main-text-box">
+        <h4 class="mb-1 text-sm text-gray-800 dark:text-white">
+          <b>${section.section}</b> ${section.mainText}
+        </h4>
+      </div>
+      <div class="comment-box">
+        <h4 class="mb-1 text-sm text-gray-800 dark:text-white">
+          ${section.commentText}
+        </h4>
+      </div>
+    </div>
+  `;
+    }
+
+    function formatSection(section) {
+      return `
+    <div class="item-container">
+      <div class="main-text-box">
+        <h4 class="mb-1 text-sm text-gray-800 dark:text-white">
+          <b>${section.section}</b> ${section.mainText}
+        </h4>
+      </div>
+    </div>
+  `;
+    }
+
+    function generateContent() {
+      const contentContainer = document.getElementById('content-container');
+      contentArray.forEach(item => {
+        // Add the title
+        contentContainer.innerHTML += `<h2 class="mb-3 text-2xl md:text-[28px] text-gray-800 dark:text-white">${item.title}</h2>`;
+
+        // Add each section under this title
+        item.sections.forEach(section => {
+          if (section.commentText) {
+            contentContainer.innerHTML += formatSectionWithComment(section);
+          } else {
+            contentContainer.innerHTML += formatSection(section);
+          }
+        });
+      });
+    }
+
   </script>
 </head>
 
@@ -139,949 +629,20 @@
             </span>
             <p class="text-base text-body-color dark:text-dark-6">
               Copyright © 2024 - THE CALIFORNIA OPEN SOURCE COMPANY LLC <br> <br>
-Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
-<hr>
+              Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is
+              not allowed.
+              <hr>
             </p>
           </div>
         </div>
       </div>
 
-
       <div class="-mx-4 flex flex-wrap">
         <div class="w-full px-4">
-          <div class="mx-auto max-w-[780px]">
-            <h2 class="text-dark dark:text-white md:text-[28px]">
-              0. Definitions
-            </h2>
-        <p class="text-base text-body-color dark:text-dark-6">
-            <ol class="legal_doc">
-            <li><b>"Licensed Technology"</b> shall mean the software, documentation, code, materials, and any other intellectual property specified in Appendix A as provided by the Licensor to the Licensee under this Agreement, as well as any updates, modifications, or improvements thereto made by either the Licensor or the Licensee. </li>
-            <li><b>"Licensor"</b> shall mean the individual, corporation, or other legal entity that owns or controls the intellectual property rights in the Licensed Technology and grants the Licensee a license to use the Licensed Technology under the terms and conditions of this Agreement.</li>
-            <li><b>"Licensee"</b> shall mean the individual, corporation, or other legal entity that is granted a license to use the Licensed Technology under the terms and conditions of this Agreement.</li>
-            <li><b>"Parties"</b> shall mean the Licensor and the Licensee collectively, and "Party" shall mean either the Licensor or the Licensee individually, as the context requires.</li>
-            <li><b>"Affiliate"</b> shall mean, with respect to a Party, any entity that directly or indirectly controls, is controlled by, or is under common control with such Party. For purposes of this definition, "control" means the power to direct or cause the direction of the management and policies of an entity, whether through the ownership of voting securities, by contract, or otherwise.</li>
-            <li><b>"Employee"</b> shall mean any individual who is employed by either Party or any of its Affiliates on a full-time, part-time, or temporary basis, and who is subject to the direction and control of the employing Party or Affiliate with respect to the time, place, and manner of their work. The term "Employee" shall not include Contractors.</li>
-            <li><b>"Contractor"</b>shall mean any individual or entity that is not an Employee of either Party or any of its Affiliates, but is engaged by a Party or its Affiliate to perform services on their behalf. Contractors may include, but are not limited to, consultants, advisors, or outsourced service providers.</li>
-            <li><b>"Intellectual Property Rights"</b> means any form of protection afforded anywhere in the world by law to inventions, works, designs, software, trade secrets, confidential information, know-how and other proprietary information and data, including without limitation patents (including re-issues, divisions, continuations and extensions thereof), copyrights, database rights, registered and not-registered design rights, utility models, mask works, as well as applications for any such rights.</li>
-            <li><b>"Application"</b> shall mean a product, service, or solution developed by the Licensee that incorporates the Licensed Technology and adds primary and substantial functionality, features, or improvements that are distinct from those provided by the Licensed Technology itself. An Application must have a clear and distinctive goal that goes beyond merely serving as a wrapper, modification, or adaptation of the Licensed Technology.</li>
-            <li><b>"Derivative Work"</b> shall mean any modification, adaptation, translation, improvement, enhancement, or other work based on or derived from the Licensed Technology that does not add primary and substantial functionality, features, or improvements distinct from those provided by the Licensed Technology itself. This includes, without limitation, any product, service, or solution that integrates, incorporates, bundles, wraps, interfaces with, or adapts the Licensed Technology without significantly changing or enhancing its original functionality, features, or purpose.</li>
-            <li><b>"Documentation"</b> shall mean any user manuals, technical manuals, specifications, or other written materials provided by the Licensor that describe the features, functions, or operation of the Licensed Technology.</li>
-            <li><b>"Feedback"</b> shall mean any suggestions, comments, ideas, or other information provided by the Licensee to the Licensor regarding the Licensed Technology, including but not limited to bug reports, feature requests, and performance evaluations.</li>
-            <li><b>"Compatible Open-Source Licenses"</b> shall mean open-source software licenses allowing for the free use, modification, and distribution of the Licensed Technology, without imposing conflicting or additional restrictions. The only valid licenses are: (a) MIT License (b) Apache License 2.0 (c) BSD 3-Clause "New" or "Revised" License.</li>
-            <li><b>"Non-Compatible Open-Source Licenses"</b> shall mean any license terms that are inconsistent with or conflict with the terms of this Agreement, including but not limited to the GNU General Public License (GPL), Lesser GPL (LGPL), or the Creative Commons Attribution-ShareAlike License.</li>
-            <li><b>"Fees"</b> shall mean the amounts payable by the Licensee to the Licensor in consideration for the rights and licenses granted under this Agreement. </li>
-            <li><b>"Term"</b> shall mean the duration of this Agreement, as specified in Appendix A, commencing on the Effective Date and continuing until the expiration or termination of this Agreement in accordance with its terms.</li>
-            <li><b>"Effective Date"</b> shall mean the date on which this Agreement comes into force, as specified in Appendix A or as determined by the mutual execution of this Agreement by both parties.</li>
-            <li><b>“Force Majeure Event”</b> shall have the meaning set forth in Section 13.</li>
-            <li><b>"End User"</b> shall mean any individual, corporation, or other legal entity that is not a party to this Agreement, but obtains and uses the Application developed by the Licensee, either under the terms of a Compatible License or through a commercial arrangement with the Licensee.</li>
-          </ol>
-        </p>
-<hr>
+          <div id="content-container" class="mx-auto max-w-[780px]">
+            <!-- Our JavaScript will insert the formatted content here -->
           </div>
         </div>
-      </div>
-
-      <div class="-mx-4 pt-4">
-        <div class="w-full px-2">
-          <div class="mx-auto max-w-[780px] flex flex-wrap">
-            <h2 class="contract-title-style">
-              1. Object of the Agreement
-            </h2>
-<!-- 1.1 -->
-<div class="item-container">
-        <div class="main-text-box">
-              <h4 class="subitem-text-style">
-              <b>1.1</b> The primary purpose of this Agreement is to delineate the terms under which the Licensor grants the Licensee specific rights pertaining to the use of the Licensed Technology. It is explicitly stated and understood that this Agreement does not grant any rights, privileges, or licenses to any third parties not explicitly mentioned herein.
-              </h4>
-        </div>
-
-        <div class="comment-box">
-              <h4 class="subitem-text-style">
-                This contract can only be signed between you and SimpleBLE!
-              </h4>
-        </div>
-      </div>
-<!-- /1.1 -->
-
-<!-- 1.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>1.2</b> Under the terms outlined in this Agreement, contingent upon the Licensee's timely payment of Fees as specified in Appendix A, and strict adherence to all other terms and conditions herein, the Licensor grants the Licensee a worldwide, non-exclusive, non-sublicensable, and non-transferable license to use or modify the Licensed Technology, for the sole purposes of creating Application based on the Licensed Technology for  and marketing, promoting, licensing, maintaining and supporting such Applications to/for End-User,, subject to the limitations and restrictions set forth in this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      When this is signed and the fee transfer is confirmed, you can use the library for your innovations.
-    </h4>
-  </div>
-</div>
-<!-- /1.2 -->
-
-<!-- 1.3 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>1.3</b> Under the terms outlined in this Agreement, contingent upon the Licensee's timely payment of Fees as specified in Appendix A, and strict adherence to all other terms and conditions herein, the Licensor grants the Licensee a worldwide, non-exclusive, non-sublicensable, and non-transferable license to use or modify the Licensed Technology, for the sole purposes of creating Application based on the Licensed Technology for and marketing, promoting, licensing, maintaining and supporting such Applications to/for End-User,, subject to the limitations and restrictions set forth in this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      You can use our tech to make and sell apps, but you can't give or sell our license to others. You must pay on time and follow the rules set forth.
-    </h4>
-  </div>
-</div>
-<!-- /1.3 -->
-
-<!-- 1.4 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>1.4</b> The effective period of this Agreement commences both Parties signing this Agreement and the subsequent payment of the Fee by the Licensee. This initiation is contingent upon these dual conditions being met, marking the start of the Term as indicated in Appendix A and continuing for the Term as indicated in Appendix A. Following the conclusion of this Term, the Agreement may be subject to renewal, based on mutual consent of both Parties and contingent upon the Licensee's payment of any applicable renewal fees, as well as their continued compliance with the terms set forth herein.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      The agreement starts when both sides sign and the fee is covered. It lasts for the time stated in Appendix A. After that, it can be renewed if both agree, and we've followed the rules.
-    </h4>
-  </div>
-</div>
-<!-- /1.4 -->
-
-<!-- 1.5 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>1.5</b> The Licensee acknowledges and agrees that any use of the Licensed Technology or any Derivative Work by the Licensee outside the scope of this Agreement shall constitute a material breach of this Agreement and may result in the immediate termination of the license granted herein. The Licensee shall promptly notify the Licensor of any unauthorized use or disclosure of the Licensed Technology and take reasonable steps to prevent further breach of this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Remember to use our tech only as we've agreed. If you notice any unauthorized use, let us know right away. We're here to help you stay on track and protect our shared interests!
-    </h4>
-  </div>
-</div>
-<!-- /1.5 -->
-<h2 class="contract-title-style">
-  2. Intellectual Property
-</h2>
-
-<!-- 2.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>2.1</b> The Licensor retains all right, title, and interest, including all Intellectual Property Rights, in and to the Licensed Technology. This Agreement does not grant the Licensee any ownership rights in the Licensed Technology, but only the limited license rights expressly set forth herein. The Licensed Technology is protected by copyright laws, international copyright treaties, and other Intellectual Property Laws and treaties. Any unauthorized copying, modification, distribution, or use of the Licensed Technology is strictly prohibited and may subject the Licensee to legal action.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      We're excited to share our technology with you! Just remember, while you can use it as agreed, we still own all the rights to SimpleBLE.
-    </h4>
-  </div>
-</div>
-<!-- /2.1 -->
-
-<!-- 2.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>2.2</b> The Licensee shall own the Intellectual Property Rights in any Application developed by the Licensee, excluding the Licensed Technology and any Derivative Works. The Licensee is hereby granted the privilege to alter, adapt, and modify the Licensed Technology as necessary to meet specific requirements or objectives. Any Derivative Work based on or derived from the Licensed Technology shall be owned by the Licensor and considered part of the Licensed Technology, subject to the terms and conditions of this Agreement. <b>The Licensee shall have no ownership rights in Derivative Works.</b>
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Great news! The amazing apps you create are all yours. You can tweak our tech to fit your needs, which is super helpful. Just keep in mind that any changes to our core technology still belong to us. This is mainly because we are responsible for it.
-    </h4>
-  </div>
-</div>
-<!-- /2.2 -->
-
-<!-- 2.3 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>2.3</b> End Users may use, modify, and distribute the Application in accordance with the terms of the applicable Compatible License or commercial agreement, with the licensee, but shall have no rights to the Licensed Technology except as expressly granted in this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Your users can enjoy your app to the fullest, based on the terms you set. Just remember, our underlying library is still subject to this agreement.
-    </h4>
-  </div>
-</div>
-<!-- /2.3 -->
-
-<h2 class="contract-title-style">
-  3. Fees and Taxes
-</h2>
-
-<!-- 3.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>3.1</b> The Licensee shall pay the Licensor the fees specified in Appendix A (the "Fees") in accordance with the payment terms set forth therein. If the Licensee fails to pay the Fees within the agreed payment term, the Licensee shall owe Late Payment Charges as specified in Appendix A.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Only after everything is clear, agreed upon, and signed, we will send an invoice. But please, pay on time!
-    </h4>
-  </div>
-</div>
-<!-- /3.1 -->
-
-<!-- 3.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>3.2</b> All Fees are non-refundable, and the Licensor shall have no obligation to refund any Fees paid by the Licensee, except as expressly provided in this Agreement. The Licensee shall not be entitled for any reason to any set-off, counter-claim, abatement, or other similar deduction to withhold payment of any amount due to the Licensor.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Please note that all payments are final and non-refundable. Make sure you're comfortable with your purchase before proceeding.
-    </h4>
-  </div>
-</div>
-<!-- /3.2 -->
-
-<!-- 3.3 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>3.3</b> All Fees are exclusive of any applicable taxes, levies, or duties, including but not limited to value-added tax, sales tax, or withholding tax. The Licensee shall be responsible for paying all such taxes, levies, or duties associated with the Fees, except for those based on the Licensor's income.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Taxes and additional charges are not included in the fees. Make sure to handle those separately.
-    </h4>
-  </div>
-</div>
-<!-- /3.3 -->
-
-<!-- 3.4 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>3.4</b> If the Licensor is required to pay or collect any such taxes, levies, or duties on behalf of the Licensee, the amount payable by the Licensee shall be increased to the extent necessary to ensure that the Licensor receives a sum equal to the Fees it would have received had no such deduction or withholding been required. The Licensor shall provide the Licensee with appropriate tax invoices or receipts evidencing the payment of any such taxes, levies, or duties. The Licensee shall furnish the Licensor with any relevant tax exemption certificates or other documentation required to minimize or eliminate any applicable taxes, levies, or duties.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      If we need to handle taxes for you, your payment will be adjusted accordingly. We’ll provide receipts, and you can submit any tax exemption documents to us.
-    </h4>
-  </div>
-</div>
-<!-- /3.4 -->
-
-<h2 class="contract-title-style">
-  4. General Provisions
-</h2>
-
-<!-- 4.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.1</b> Entire Agreement. This Agreement, together with Appendix A, collectively forms the complete and exclusive terms of the arrangement between the Parties. It supersedes all prior or contemporaneous discussions, representations, contracts, including but not limited to previous License Agreements and similar agreements, as well as proposals, whether written or oral, concerning the subject matters herein.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      This document is the final and complete agreement between us, overriding any previous discussions or agreements. that might come into conflict with these provisions.
-    </h4>
-  </div>
-</div>
-<!-- /4.1 -->
-
-<!-- 4.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.2</b> Severability. In the event any portion of this Agreement is deemed invalid or unenforceable, such portion shall not limit or otherwise modify or affect any other portion of this Agreement. Without limiting the generality of the foregoing, if the scope of any provision contained in this Agreement is too broad to permit enforcement to its fullest extent, such covenant shall be enforced to the maximum extent permitted by law, and the Parties hereby agree that such scope may be judicially modified accordingly.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      It is a challenge to write a world-wide license agreement for an open source initiative. If a few exact provisions that we have agreed upon don't apply, the rest of it is still valid.
-    </h4>
-  </div>
-</div>
-<!-- /4.2 -->
-
-<!-- 4.3 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.3</b> Modification; Waiver. This Agreement is furnished 'as-is' and no amendments to its terms are permissible. The failure of either Party to enforce any provision of this Agreement may not be deemed a waiver of that or any other provision of this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      After review and agreed, this doc is set in stone.
-    </h4>
-  </div>
-</div>
-<!-- /4.3 -->
-
-<!-- 4.4 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.4</b> Marketing. Licensee agrees that the Licensor may use the Licensee's name, trade name, and trademark in the Licensor's marketing materials and on its website, solely for the purpose of identifying the Licensee as a customer of the Licensor. Such use shall be in accordance with the Licensee's brand guidelines and shall not imply any endorsement or affiliation beyond the scope of this Agreement. The Licensor shall promptly cease any such use upon written request from the Licensee.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      We’re proud to list you as a customer on our site and in our materials. If you prefer not to be mentioned, just let us know, and we'll stop immediately.
-    </h4>
-  </div>
-</div>
-<!-- /4.4 -->
-
-<!-- 4.5 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.5</b> Compliance with Applicable Laws. In the course of employing the Licensed Technology pursuant to this Agreement, the Licensee shall ensure compliance with all relevant laws and regulations. The Licensee is prohibited from engaging in the renting, leasing, or similar disposal of the Licensed Technology in any manner that contradicts this Agreement. Additionally, the Licensee must refrain from any misappropriation or unauthorized utilization of other products or services offered by the Licensor.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Just a friendly reminder to follow all laws while using our technology and avoid sharing it in ways not allowed by this agreement. We appreciate your understanding and cooperation!
-    </h4>
-  </div>
-</div>
-<!-- /4.5 -->
-
-<!-- 4.6 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.6</b> Trademarks. The Licensee shall not remove or alter any copyright, trademark, or other proprietary rights notice(s) contained in any portion of the Licensed Technology. Applications must add primary and substantial functionality to the Licensed Technology so as not to compete with the Licensed Technology.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Please keep all original trademarks and notices intact. When building on our technology, make sure your apps add something new and exciting without competing directly with it.
-    </h4>
-  </div>
-</div>
-<!-- /4.6 -->
-
-<!-- 4.7 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.7</b> Prohibited Activities. The Licensee shall not use the Licensed Technology for any unlawful purpose, including without limitation the infringement of any third party’s Intellectual Property Right or other proprietary rights. The Licensee agrees that it shall not claim any right to or license (except for the license granted pursuant to Section 1.2 above) with respect to the Licensed Technology nor shall the Licensee contest or assist in contesting the Licensor’s right, title and interest in and to such the Licensed Technology. Further, the Licensee shall not partake in activities that contribute to or support claims, whether made by the Licensee or any third party, alleging that the Licensed Technology infringes on any patents. The sale of the Licensed Technology or the establishment of a security interest over it is strictly prohibited. Moreover, the distribution of any product, inclusive of the Licensed Technology, shall be conducted strictly in accordance with the permissions explicitly granted by this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Please use our technology responsibly and legally. Avoid any actions that might challenge our ownership or use the technology beyond what's allowed. We're counting on you to help keep everything fair and square!
-    </h4>
-  </div>
-</div>
-<!-- /4.7 -->
-
-<!-- 4.8 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.8</b> Assignment. The Licensee is barred from assigning or transferring any rights, benefits, or obligations under this Agreement, unless such transfer is part of the sale of its relevant business or assets, or is done with the Licensor's prior written consent, which is not to be unreasonably withheld or delayed. In contrast, the Licensor retains the unencumbered right to assign or transfer any of its rights, benefits, or obligations under this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      You can’t pass on your rights under this agreement without our okay, but we can. If you sell your business, though, transferring rights should be fine with a quick check-in.
-    </h4>
-  </div>
-</div>
-<!-- /4.8 -->
-
-<!-- 4.9 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.9</b> Injunctive Relief. The Licensee hereby acknowledges that unauthorized disclosure and/or use of any of the Licensed Technology could cause irreparable harm and significant injury to the Licensor that may be difficult to ascertain. Accordingly, the Licensee agrees that, in addition to any other rights and remedies it may have, the Licensor will have the right to seek immediate injunctive relief to enforce the obligations under this Agreement without the necessity of posting a bond or any other security.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      If our technology is used or shared inappropriately, we might need to act quickly to protect it. We appreciate your understanding in helping us safeguard our assets!
-    </h4>
-  </div>
-</div>
-<!-- /4.9 -->
-
-<!-- 4.10 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.10</b> No Representation. The Licensee shall not represent itself as an agent of the Licensor for any purpose, nor give any condition or warranty or make any representation on the Licensor's behalf or commit the Licensor to any contracts. Further, the Licensee shall not make any representations, warranties, guarantees or other commitments with respect to the specifications, features or capabilities of the Licensed Technology or otherwise incur any liability on behalf of the Licensor in any circumstances.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Just a heads-up: you can’t act on our behalf or make promises about our technology. Let’s keep our roles clear to avoid any misunderstandings.
-    </h4>
-  </div>
-</div>
-<!-- /4.10 -->
-
-<!-- 4.11 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.11</b> Audits. The Licensor has the right to audit the Licensee's compliance with its obligations under this Agreement. The Licensee shall provide to the Licensor and its personnel, auditors, and inspectors such assistance, access, and cooperation as they may need and reasonably require.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      If there is within reasonable doubts that there is a mis-use of the technology, we may need to check in to ensure everything’s fine. Your cooperation in audits is greatly appreciated.
-    </h4>
-  </div>
-</div>
-<!-- /4.11 -->
-
-<!-- 4.12 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.12</b> Cumulative Remedies. Any remedies specified in this Agreement are cumulative and are not intended to be exclusive of any other remedies to which the Licensor may be entitled at law or equity in case of any breach or threatened breach by the Licensee of any provision of this Agreement, unless such remedies are specifically limited or excluded by the terms of any provision of this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      If there’s a breach of this agreement, we have several ways to address it, not just the ones listed here. Hopefully, it will not come to any of that.
-    </h4>
-  </div>
-</div>
-<!-- /4.12 -->
-
-<!-- 4.13 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>4.13</b> Survival. Certain provisions of this Agreement are designed to outlast its termination. These provisions, due to their inherent nature or as specifically indicated, will continue to be valid and enforceable even after the termination of this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      As you will see in 9.2, you <b>are allowed to keep using this tech after the agreement ends.</b> Some parts of this agreement therefore will still apply.
-    </h4>
-  </div>
-</div>
-<!-- /4.13 -->
-
-<h2 class="contract-title-style">
-  5. Feedback and Updates
-</h2>
-<!-- 5.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>5.1</b> The Licensee hereby grants to the Licensor the unrestricted right to freely utilize and disclose any Feedback that the Licensee provides concerning the Licensed Technology. The Licensee acknowledges and agrees that all Feedback may be employed by the Licensor for any purpose, whether commercial, developmental, or otherwise, without any obligation for acknowledgment, compensation, or other consideration to the Licensee. This includes, but is not limited to, the right to develop, copy, publish, modify, enhance, or otherwise make improvements to the Licensed Technology, at the sole discretion of the Licensor. The Licensee recognizes that all Feedback shall be considered non-confidential and the Licensor is free to use such Feedback without any restriction or obligation of confidentiality.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      We welcome your feedback and may use it to improve our technology. Feel free to share your thoughts, but know that we are not tracking this a source of inspiration of any sort. The main focus is on bringing a tool of the highest standard, on this regard.
-    </h4>
-  </div>
-</div>
-<!-- /5.1 -->
-
-<!-- 5.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>5.2</b> During the Term, the Licensor may develop and release updates, upgrades, or new versions of the Licensed Technology. The Licensee shall have the right to receive and use such updates, upgrades, or new versions, subject to the terms and conditions of this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      You’ll get access to any updates or new versions we release while this agreement is active. You can enjoy the latest features as they come out.
-    </h4>
-  </div>
-</div>
-<!-- /5.2 -->
-
-<!-- 5.3 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>5.3</b> The Licensee's right to receive and use updates, upgrades, or new versions shall continue until the termination of this Agreement, as outlined in Section 8. Upon termination, the Licensee shall have no further right to receive any updates, upgrades, or new versions of the Licensed Technology.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      You’ll get updates and new versions as long as the agreement is active. Once it ends, you won't receive further updates, <b>but you can keep up the latest one</b>, even if you don't renovate.
-    </h4>
-  </div>
-</div>
-<!-- /5.3 -->
-
-<!-- 5.4 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>5.4</b> All updates, upgrades, or new versions of the Licensed Technology provided to the Licensee shall be considered part of the Licensed Technology and subject to the terms and conditions of this Agreement, unless otherwise specified by the Licensor in writing.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Any updates we send you are part of the original technology and follow the same agreement terms, unless we say otherwise in writing.
-    </h4>
-  </div>
-</div>
-<!-- /5.4 -->
-
-<!-- 5.5 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>5.5</b> Notwithstanding the Licensee's right to receive updates, upgrades, or new versions, the Licensor is under no obligation to develop or release any such updates, upgrades, or new versions. The development and release of updates, upgrades, or new versions shall be at the sole discretion of the Licensor.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      While you have the right to updates, we can’t guarantee when or if new versions will be released. It’s up to us to decide when those come out.
-    </h4>
-  </div>
-</div>
-<!-- /5.5 -->
-<h2 class="contract-title-style">
-  6. End user Rights and Obligations
-</h2>
-
-<!-- 6.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>6.1</b> End Users who obtain the Application, either under a Compatible Open-Source License or through a commercial arrangement with the Licensee, may use, modify, and distribute the Application, subject to the terms and conditions of the applicable Compatible Open-Source License or commercial agreement. However, End Users shall have no right to use, modify, or distribute the Licensed Technology, or any part thereof, except as incorporated in the Application and subject to the terms and conditions of this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      End users can use, modify, and share your application as allowed by your chosen license. But they can’t apply those provisions to our library.
-    </h4>
-  </div>
-</div>
-<!-- /6.1 -->
-
-<!-- 6.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>6.2</b> The Licensee shall include a prominent notice in the Application's documentation, user interface, and source code, stating the following:
-    </h4>
-    <p class="subitem-quote-style">
-      <b>IMPORTANT NOTICE:</b> This Application is built upon the [Licensed Technology Name], which is owned by [Licensor Name] and used under license. As an End User of this Application, you are prohibited from using, modifying, or distributing the [Licensed Technology Name], or any part thereof, except as incorporated in this Application. Specifically, you may not:
-    </p>
-    <p class="subitem-quote-style">
-      a) Extract, isolate, or separate the [Licensed Technology Name] from this Application;<br>
-      b) Use the [Licensed Technology Name] for any purpose other than as part of this Application;<br>
-      c) Modify, adapt or translate the [Licensed Technology Name];<br>
-      d) Create any Derivative Works based on the [Licensed Technology Name];<br>
-      e) Distribute, sublicense, rent, lease, lend, or transfer the [Licensed Technology Name] to any third party;<br>
-      f) Reverse engineer, decompile, disassemble, or attempt to derive the source code of the [Licensed Technology Name];<br>
-      g) Remove, obscure, or alter any copyright, trademark, or other proprietary rights notices contained within the [Licensed Technology Name].
-    </p>
-    <p class="subitem-text-style">
-      Your use of this Application is subject to your compliance with these restrictions. If you have any questions about these terms, please contact [Licensee Name].
-    </p>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Make sure to include a notice in your app explaining how users can and can’t use our technology. We have attached the way to do that, so that you don't need to figure it out.
-    </h4>
-  </div>
-</div>
-<!-- /6.2 -->
-
-<!-- 6.3 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>6.3</b> End Users must comply with all applicable laws, regulations, and third-party rights when using, modifying, or distributing the Application.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Users need to follow all relevant laws and respect third-party rights while using or sharing your app.
-    </h4>
-  </div>
-</div>
-<!-- /6.3 -->
-
-<!-- 6.4 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>6.4</b> The Licensee shall indemnify, defend, and hold harmless the Licensor from and against any claims, damages, liabilities, costs, and expenses arising out of or in connection with any use of the Application by End Users, including any use that breaches the terms and conditions of this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      You’ll protect us from any legal issues or costs that come up because of how end users handle your app.
-    </h4>
-  </div>
-</div>
-<!-- /6.4 -->
-
-<h2 class="contract-title-style">
-  7. Use of Non-Compatible Open-Source Licenses
-</h2>
-
-<!-- 7.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>7.1</b> In adherence to the terms of this Agreement, the Licensee is expressly prohibited from, and shall not permit any third party or End User to, integrate, distribute, or otherwise utilize the Licensed Technology in conjunction with any code, software, or content that is subject to a license incompatible with the terms of this Agreement, hereafter referred to as “Non-Compatible Open-Source Licenses”. Such prohibitive action includes, but is not limited to, any combination or use that would necessitate, either directly or indirectly, that the Licensed Technology be subject or conform to any licensing terms other than those explicitly set forth in this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      You can’t use our technology with any software that has conflicting license terms. Keeping it separate helps us all stay compliant.
-    </h4>
-  </div>
-</div>
-<!-- /7.1 -->
-<h2 class="contract-title-style">
-  8. Termination
-</h2>
-
-<!-- 8.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>8.1</b> This Agreement may be terminated without cause by either Party upon written notice to the other Party, provided such notice period is no less than three (3) months.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Either of us can end this agreement for any reason with a three-month notice.
-    </h4>
-  </div>
-</div>
-<!-- /8.1 -->
-
-<!-- 8.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>8.2</b> Either Party may terminate this Agreement with immediate effect, if the other Party commits a material breach of the terms of this Agreement and has not remedied such breach upon the non-breaching Party's written notice within a reasonable timeframe, which shall be no less than thirty (30) days.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      If one of us seriously breaks the agreement and doesn’t fix it within 30 days of being told, the other can end the agreement right away.
-    </h4>
-  </div>
-</div>
-<!-- /8.2 -->
-
-<!-- 8.3 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>8.3</b> The Licensor may also immediately terminate this Agreement upon written notice to the Licensee if the Licensee becomes bankrupt, insolvent, enters into liquidation, or undergoes debt restructuring.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      If you face bankruptcy or similar financial trouble, we can end the agreement right away with written notice. It’s a precaution to handle financial risks.
-    </h4>
-  </div>
-</div>
-<!-- /8.3 -->
-
-<h2 class="contract-title-style">
-  9. Rights and Duties upon Termination
-</h2>
-
-<!-- 9.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>9.1</b> Upon termination of this Agreement, the Licensee's rights to use or modify the Licensed Technology, and to create Derivative Works based on the Licensed Technology, shall immediately cease, except as provided in Section 9.2.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      In case this agreement ends, you must stop using our technology, but only in case of a breach - as you will see in the next provision.
-    </h4>
-  </div>
-</div>
-<!-- /9.1 -->
-
-<!-- 9.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>9.2</b> In the event that this Agreement is terminated by either Party without cause pursuant to Section 8.1, or by the Licensor due to the Licensee's bankruptcy, insolvency, liquidation, or debt restructuring pursuant to Section 8.3, or upon the conclusion of the Term as specified in Section 1.4, the Licensee shall retain the right to continue using the Licensed Technology, limited to the version in use immediately prior to the termination date, solely for the purpose of maintaining and supporting existing Applications. The Licensee shall have no right to receive any updates, modifications, or improvements to the Licensed Technology made by the Licensor after the termination date.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      If this agreement ends without any breach or due to financial issues, you can keep using the current version of our technology to support your existing apps <b>forever</b>. However, there won’t be any new updates or changes after the termination.
-    </h4>
-  </div>
-</div>
-<!-- /9.2 -->
-
-<!-- 9.3 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>9.3</b> In the event that this Agreement is terminated by either Party due to a material breach by the other Party pursuant to Section 8.2, the Licensee's right to continue using the Licensed Technology as described in Section 9.2 shall not apply, and all rights granted to the Licensee under this Agreement shall immediately terminate.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      If the agreement ends because of a breach, we will terminate all rights to use our technology, without the option to keep the existing version.
-    </h4>
-  </div>
-</div>
-<!-- /9.3 -->
-
-<!-- 9.4 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>9.4</b> Expiry or termination of this Agreement shall not relieve the Licensee of its obligation to pay any Fees accrued or payable to the Licensor prior to the effective date of termination, and the Licensee shall pay to the Licensor all such Fees within 30 days from the effective date of termination.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Even if the agreement ends, we still need to settle any outstanding fees within 30 days.
-    </h4>
-  </div>
-</div>
-<!-- /9.4 -->
-
-<!-- 9.5 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>9.5</b> The Licensee acknowledges and agrees that, following the termination of this Agreement, it shall remain bound by its obligations under this Agreement with respect to any use of the Licensed Technology, including in Applications already distributed, and shall ensure that such use remains in compliance with the terms of this Agreement.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Even after the agreement ends, you’re still responsible for making sure your use of our technology, especially in existing apps, follows the agreement’s rules.
-    </h4>
-  </div>
-</div>
-<!-- /9.5 -->
-
-<h2 class="contract-title-style">
-  10. Notices
-</h2>
-
-<!-- 10.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      Any notice given by one Party to the other shall be deemed properly given and deemed received if specifically acknowledged by the receiving Party in writing. Additionally, any notice issued by the Licensor to the Licensee using the email address provided by the Licensee to the Licensor will be effective from the moment it was sent. Each communication and document made or delivered by one Party to the other Party pursuant to this Agreement shall be in the language specified in Appendix A.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Notices between us are official when the other party acknowledges them in writing. Emails are considered received as soon as they were sent, within a reasonable period of time.
-    </h4>
-  </div>
-</div>
-<!-- /10.1 -->
-
-<h2 class="contract-title-style">
-  11. Warranty Disclaimers
-</h2>
-
-<!-- 11.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      THE LICENSED TECHNOLOGY, INCLUDING ALL SOFTWARE, DOCUMENTATION, INFORMATION, CONTENT, MATERIALS, CODE, AND RELATED SERVICES, ARE PROVIDED BY THE LICENSOR ON AN “AS IS” AND “AS AVAILABLE” BASIS. THE LICENSOR AND ITS AFFILIATES HEREBY DISCLAIM ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. SPECIFICALLY, THE LICENSOR AND ITS AFFILIATES MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, REGARDING THE LICENSED TECHNOLOGY, INCLUDING BUT NOT LIMITED TO IMPLIED OR STATUTORY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT OF INTELLECTUAL PROPERTY OR OTHER PROPRIETARY RIGHTS, AND ALL WARRANTIES ARISING FROM COURSE OF DEALING, USAGE, OR TRADE PRACTICE. THE LICENSOR AND ITS AFFILIATES DO NOT WARRANT THAT THE LICENSED TECHNOLOGY, OR ANY PRODUCTS OR RESULTS OF THE USE THEREOF, WILL MEET LICENSEE'S OR ANY OTHER PERSON'S REQUIREMENTS, OPERATE WITHOUT INTERRUPTION, ACHIEVE ANY INTENDED RESULT, BE COMPATIBLE OR WORK WITH ANY SOFTWARE, SYSTEM, OR OTHER SERVICES, OR BE SECURE, ACCURATE, COMPLETE, FREE OF HARMFUL CODE, OR ERROR-FREE AT THE TIME OF THIS AGREEMENT OR AT ANY TIME IN THE FUTURE. FURTHER, THE LICENSOR AND ITS AFFILIATES DO NOT WARRANT THAT THE LICENSED TECHNOLOGY IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. THE PARTIES ACKNOWLEDGE AND AGREE THAT THE FOREGOING WARRANTY DISCLAIMERS ARE AN ESSENTIAL ELEMENT IN SETTING CONSIDERATION UNDER THIS AGREEMENT.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Our technology is provided as-is, without any promises or guarantees. It might not be perfect or meet every need, but we offer it as it is now. As our enterprise grows, we hope to be delivering a higher quality tool every year (Otherwise, you have no reason to keep working with us!). The support you provide will find its way into improving the tool for you.
-    </h4>
-  </div>
-</div>
-<!-- /11.1 -->
-
-<h2 class="contract-title-style">
-  12. Limitation of Liability
-</h2>
-
-<!-- 12.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      TO THE FULL EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR WILL NOT BE LIABLE FOR ANY LOST PROFITS, LOSS OF SAVINGS, LOSS OR CORRUPTION OF DATA, LOSS OR INTERRUPTION OF BUSINESS, LOSS OF GOODWILL OR REPUTATION, CLAIMS MADE BY ANY END-USER OR ANY OTHER THIRD PARTY, OR ANY OTHER INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR PUNITIVE COSTS, DAMAGES, OR EXPENSES OF ANY KIND ARISING UNDER OR IN CONNECTION WITH THIS AGREEMENT. FURTHER, THE LICENSOR’S AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE TOTAL AMOUNTS PAID (IF ANY) TO THE LICENSOR UNDER THIS AGREEMENT DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENTS GIVING RISE TO THE LIABILITY. SEEKING DAMAGES AS LIMITED BY THIS SECTION SHALL BE THE SOLE AND EXCLUSIVE REMEDY TO THE LICENSEE FOR ANY ACT OR OMISSION OF THE LICENSOR. THESE LIMITATIONS OF LIABILITY AND EXCLUSIONS OF POTENTIAL DAMAGES WERE AN ESSENTIAL ELEMENT IN SETTING CONSIDERATION UNDER THIS AGREEMENT.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      We're not responsible for any indirect damages or losses related to this agreement. If anything goes wrong, our maximum liability is limited to what you paid us in the last 12 months. To avoid situations like this, and as you will notice throughout our collaboration, we hope to have a fluent conversation of ongoing challenges.
-    </h4>
-  </div>
-</div>
-<!-- /12.1 -->
-
-<h2 class="contract-title-style">
-  13. Force Majeure
-</h2>
-
-<!-- 13.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      Neither Party shall be liable to the other for any delay or non-performance of its obligations hereunder in the event and to the extent that such delay or non-performance is due to an event beyond a Party’s reasonable control and without the fault or negligence of such Party. Such causes may include, but are not limited to, any God, terrorist attack, destruction of all available copies of the Licensed Technology, governmental actions such as changes in law or embargoes, cyberattacks including but not limited to significant DDoS attacks or other cybersecurity breaches that disrupt services, critical infrastructure failure involving essential utilities including but not limited to electricity or internet services, but in every case the failure to perform must be beyond the control and without the fault or negligence of the affected Party and cannot be avoided or circumvented by such party (“Force Majeure Event”). In the occurrence of any such event, the affected Party shall notify the other Party as soon as reasonably possible and shall use all reasonable endeavors to mitigate the effects of the Force Majeure Event. If the Force Majeure Event results in a delay or non-performance of a Party for a period of three (3) months or longer, then either Party shall have the right to terminate this Agreement with immediate effect without any liability (except for the obligations of payment arising prior to the Force Majeure Event) towards the other Party.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      If something beyond our control, like a natural disaster or cyberattack, prevents us from fulfilling the agreement, neither of us will be held responsible. We’ll notify each other as soon as possible and try to minimize the impact. If the problem lasts over three months, we can end the agreement without extra obligations.
-    </h4>
-  </div>
-</div>
-<!-- /13.1 -->
-
-<h2 class="contract-title-style">
-  14. Indemnification
-</h2>
-
-<!-- 14.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      Under this Agreement, the Licensee agrees to indemnify, defend, and hold harmless the Licensor, its officers, directors, employees, agents, affiliates, successors, and assigns from any liabilities, damages, judgments, awards, losses, costs, expenses, including reasonable attorney and expert witness fees, arising out of or in connection with any third-party claims, suits, actions, or proceedings. This indemnity covers claims resulting from the Licensee's breach of this Agreement, negligence, willful misconduct, use of the Licensed Technology, or related to the Licensee's products. Excluded from this indemnification are claims alleging that the Licensee's authorized use of unmodified Licensed Technology provided by the Licensor infringes any patent, trademark, or copyright. The Licensor reserves the right, at its option and sole discretion, to assume full control of the defense of such claims with legal counsel of its choice. The Licensee is not permitted to enter into any third-party agreement that would affect the Licensor's rights, constitute an admission of fault by the Licensor, or bind the Licensor in any manner, without the Licensor's prior written consent. The Licensee must promptly notify the Licensor in writing of any claims brought against the Licensor for which indemnification or defense is sought, thereby enabling the Licensor to manage legal strategies and potential settlements effectively. For the avoidance of doubt, the Licensor does not have any obligation to defend the Licensee or any End-User against such claim and therefore such defense shall be up to the Licensor’s sole discretion. If the Licensor decides to not defend a claim for infringement of Intellectual Property Rights, the Licensee may defend itself through counsel of its own choice and at its own expense. The Licensor shall have no liability for any costs, expenses, losses or damages incurred by the Licensee or any of its End-Users in the event of such claim.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      You agree to protect us from any claims or legal issues that arise due to your use of our technology or your products. This doesn’t apply if you use our unmodified technology as provided; provided that the issue is entirely a byproduct of our source itself. We can choose to handle such claims ourselves. Just keep us in the loop if any claims come up.
-    </h4>
-  </div>
-</div>
-<!-- /14.1 -->
-
-<h2 class="contract-title-style">
-  15. Governing Law and Jurisdiction
-</h2>
-
-<!-- 15.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      The Licensor and the Licensee hereby mutually concur that the governance and interpretation of this Agreement shall be in strict accordance with the legal statutes and principles as stipulated in Appendix A.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      We both agree to follow the laws and rules mentioned in Appendix A for interpreting and governing this agreement.
-    </h4>
-  </div>
-</div>
-<!-- /15.1 -->
-
-<h2 class="contract-title-style">
-  16. Dispute Resolution
-</h2>
-
-<!-- 16.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>16.1</b> It is explicitly agreed that any dispute, controversy, or claim that may arise out of, or in connection with, this contract, inclusive of, but not limited to, its formation, interpretation, breach, or termination, and the arbitrability of the claims posited therein, shall be definitively resolved through arbitration. This arbitration shall be conducted in full alignment with the JAMS International Arbitration Rules.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      Any disagreements or issues with this agreement will be settled through arbitration according to the JAMS International Arbitration Rules.
-    </h4>
-  </div>
-</div>
-<!-- /16.1 -->
-
-<!-- 16.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>16.2</b> Furthermore, the arbitral tribunal shall be comprised of a sole arbitrator. The venue for such arbitration proceedings shall be as delineated in Appendix A of this Agreement. Moreover, the proceedings of the arbitration shall be conducted in the language specified within Appendix A. It is hereby declared that the award rendered by the said arbitrator shall be binding and enforceable, and judgment thereon may be entered in any court of competent jurisdiction.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      There will be one arbitrator for any arbitration proceedings, which will take place at the location and in the language stated in Appendix A. The decision made will be final and enforceable in any proper court.
-    </h4>
-  </div>
-</div>
-<!-- /16.2 -->
-
-<h2 class="contract-title-style">
-  17. Confidentiality
-</h2>
-
-<!-- 17.1 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>17.1</b> During the term of this Agreement and thereafter until Confidential Information becomes subject to one or more of the exceptions set forth in Section 17.3, each Party shall maintain strict confidentiality regarding the other Party's Confidential Information. "Confidential Information" shall include, but is not limited to, the Licensed Technology, trade secrets, business plans, strategies, customer information, and any other proprietary or sensitive information disclosed by one Party to the other.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      We both agree to keep each other’s sensitive information secret during and after this agreement. This includes everything from technology to business plans.
-    </h4>
-  </div>
-</div>
-<!-- /17.1 -->
-
-<!-- 17.2 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>17.2</b> Each Party agrees to use the Confidential Information solely for the purposes of exercising its rights and fulfilling its obligations under this Agreement. The receiving Party shall not disclose or permit access to Confidential Information to any third party, except to its Employees, Contractors, or agents who need to know such information for the purposes of this Agreement and who are bound by confidentiality obligations no less protective than those set forth herein.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      We’ll only use the confidential info to meet our agreement duties and won’t share it with anyone unless they absolutely need to know and are also bound to keep it confidential. Your secrets are safe with us!
-    </h4>
-  </div>
-</div>
-<!-- /17.2 -->
-
-<!-- 17.3 -->
-<div class="item-container">
-  <div class="main-text-box">
-    <h4 class="subitem-text-style">
-      <b>17.3</b> The confidentiality obligations shall not apply to information that: (a) is or becomes publicly available through no fault of the receiving Party; (b) was known to the receiving Party prior to disclosure; (c) is independently developed by the receiving Party without use of or reference to the Confidential Information; or (d) is required to be disclosed by law or court order, provided that the receiving Party gives prompt notice to the disclosing Party to enable it to seek a protective order.
-    </h4>
-  </div>
-  <div class="comment-box">
-    <h4 class="subitem-text-style">
-      We’re not required to keep info confidential if it’s public, we already knew it, we developed it independently, or we have to disclose it by law. If we must disclose, we’ll give you a heads-up.
-    </h4>
-  </div>
-</div>
-<!-- /17.3 -->
-
-
-
-      </div>
-    </div></div>
-
-
-      <div class="-mx-4 flex flex-wrap justify-center">
-
-
       </div>
     </div>
   </section>
@@ -1168,6 +729,10 @@ Everyone is permitted to copy and distribute verbatim copies of this license doc
   <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <script>
+    generateContent();
+  </script>
 
 </body>
 
