@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/tailwind.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- ==== WOW JS ==== -->
@@ -303,7 +304,7 @@
           },
           {
             section: "6.2",
-            mainText: "The Licensee shall include a prominent notice in the Application's documentation, user interface, and source code, stating the following:<br><br><strong style='color: red; background-color: yellow; padding: 5px;'>IMPORTANT NOTICE: This Application is built upon the [Licensed Technology Name], which is owned by [Licensor Name] and used under license. As an End User of this Application, you are prohibited from using, modifying, or distributing the [Licensed Technology Name], or any part thereof, except as incorporated in this Application. Specifically, you may not:</strong><br><br>a) Extract, isolate, or separate the [Licensed Technology Name] from this Application;<br>b) Use the [Licensed Technology Name] for any purpose other than as part of this Application;<br>c) Modify, adapt or translate the [Licensed Technology Name];<br>d) Create any Derivative Works based on the [Licensed Technology Name];<br>e) Distribute, sublicense, rent, lease, lend, or transfer the [Licensed Technology Name] to any third party;<br>f) Reverse engineer, decompile, disassemble, or attempt to derive the source code of the [Licensed Technology Name]; or<br>g) Remove, obscure, or alter any copyright, trademark, or other proprietary rights notices contained within the [Licensed Technology Name].<br><br><strong style='color: red; background-color: yellow; padding: 5px;'>Your use of this Application is subject to your compliance with these restrictions. If you have any questions about these terms, please contact [Licensee Name].</strong><br><br>The Licensee shall include a copy of this notice in all copies or substantial portions of the Application.",
+            mainText: "The Licensee shall include a prominent notice in the Application's documentation, user interface, and source code, stating the following:<br><br><div style=\"margin-left: 30px; margin-right: 30px\"> IMPORTANT NOTICE: This Application is built upon the [Licensed Technology Name], which is owned by [Licensor Name] and used under license. As an End User of this Application, you are prohibited from using, modifying, or distributing the [Licensed Technology Name], or any part thereof, except as incorporated in this Application. Specifically, you may not:<br><br>a) Extract, isolate, or separate the [Licensed Technology Name] from this Application;<br>b) Use the [Licensed Technology Name] for any purpose other than as part of this Application;<br>c) Modify, adapt or translate the [Licensed Technology Name];<br>d) Create any Derivative Works based on the [Licensed Technology Name];<br>e) Distribute, sublicense, rent, lease, lend, or transfer the [Licensed Technology Name] to any third party;<br>f) Reverse engineer, decompile, disassemble, or attempt to derive the source code of the [Licensed Technology Name]; or<br>g) Remove, obscure, or alter any copyright, trademark, or other proprietary rights notices contained within the [Licensed Technology Name].<br><br>Your use of this Application is subject to your compliance with these restrictions. If you have any questions about these terms, please contact [Licensee Name].</div><br>The Licensee shall include a copy of this notice in all copies or substantial portions of the Application.",
             commentText: "This section requires the Licensee to include a prominent notice detailing restrictions on End Users' use of the Licensed Technology."
           },
           {
@@ -463,13 +464,13 @@
     function formatSectionWithComment(section) {
       return `
     <div class="item-container">
-      <div class="main-text-box">
-        <h4 class="mb-1 text-sm text-gray-800 dark:text-white">
+      <div class="main-text-box bg-[#F4F7FF] dark:bg-dark text-dark dark:text-white">
+        <h4 class="mb-1 text-sm">
           <b>${section.section}</b> ${section.mainText}
         </h4>
       </div>
-      <div class="comment-box">
-        <h4 class="mb-1 text-sm text-gray-800 dark:text-white">
+      <div class="comment-box bg-gray-2 dark:bg-dark-3 text-dark dark:text-white">
+        <h4 class="mb-1 text-sm">
           ${section.commentText}
         </h4>
       </div>
@@ -479,9 +480,9 @@
 
     function formatSection(section) {
       return `
-    <div class="item-container">
-      <div class="main-text-box">
-        <h4 class="mb-1 text-sm text-gray-800 dark:text-white">
+    <div class="item-container-compact">
+      <div class="main-text-box bg-[#F4F7FF] dark:bg-dark text-dark dark:text-white">
+        <h4 class="mb-1 text-sm">
           <b>${section.section}</b> ${section.mainText}
         </h4>
       </div>
@@ -491,11 +492,12 @@
 
     function generateContent() {
       const contentContainer = document.getElementById('content-container');
+
+
       contentArray.forEach(item => {
         // Add the title
-        contentContainer.innerHTML += `<h2 class="mb-3 text-2xl md:text-[28px] text-gray-800 dark:text-white">${item.title}</h2>`;
+        contentContainer.innerHTML += `<div style="margin-top: 1rem;"> <h2 class="mb-3 text-2xl md:text-[28px] text-gray-800 dark:text-white">${item.title}</h2>`;
 
-        // Add each section under this title
         item.sections.forEach(section => {
           if (section.commentText) {
             contentContainer.innerHTML += formatSectionWithComment(section);
@@ -503,6 +505,8 @@
             contentContainer.innerHTML += formatSection(section);
           }
         });
+
+        contentContainer.innerHTML += `</div>`;
       });
     }
 
@@ -625,14 +629,67 @@
               SimpleBLE Commercial License Agreement
             </h2>
             <span class="mb-2 block text-lg font-semibold text-primary text-center">
-              Version 1 - 2024-05-08
+              Version 1 - 2024-06-28
             </span>
             <p class="text-base text-body-color dark:text-dark-6">
               Copyright © 2024 - THE CALIFORNIA OPEN SOURCE COMPANY LLC <br> <br>
               Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is
               not allowed.
-              <hr>
+              <hr  style="margin-top: 2rem;">
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4">
+          <div class="mx-auto max-w-[780px] bg-[#F4F7FF] dark:bg-dark rounded-lg shadow-md p-8 mb-8 border border-gray-200 dark:border-gray-700 text-dark dark:text-white" style="padding: 1rem">
+            <h2 class="text-2xl font-bold mb-6">Appendix A: Material Licensing Terms</h2>
+
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-3">Licensed Technology:</h3>
+              <p class="mb-4">A collection of software libraries that facilitate the
+                development of Bluetooth Low Energy (BLE) applications in various programming languages, colloquially
+                known as SimpleBLE, hosted on GitHub at the following Internet address:
+                  <a href="https://github.com/OpenBluetoothToolbox/SimpleBLE"
+                  class="text-primary hover:underline">https://github.com/OpenBluetoothToolbox/SimpleBLE</a></p>
+              <p class="mb-2">The specific licensed components of SimpleBLE project
+                include:</p>
+              <div class="pl-6" style="margin-left: 1rem;">
+                <p class="mb-2">• C and C++ version of SimpleBLE, with support for the Linux, Windows, MacOS, iOS and Android
+                  operating systems.</p>
+                <p>• Python version of SimpleBLE, colloquially known as SimplePyBLE, with support for the Linux, Windows
+                  and MacOS operating systems.</p>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-3">Fees:</h3>
+              <div class="pl-6" style="margin-left: 1rem;">
+                <p class="mb-2">• License Fee: [AMOUNT] [CURRENCY]</p>
+                <p class="mb-2">• Payment Terms: Net 30</p>
+                <p>• Late Payment Charges: 5% interest per month</p>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-3">License term:</h3>
+              <p class="">1 Year</p>
+            </div>
+
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-3">Language for Notices:</h3>
+              <p class="">English</p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Governing Law:</h3>
+              <div class="pl-6" style="margin-left: 1rem;">
+                <p class="mb-2">• Jurisdiction: The laws of California, USA, shall govern this Agreement.</p>
+                <p class="mb-2">• Place of Arbitration: California, USA.</p>
+                <p>• Arbitral Proceeding Language: English</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

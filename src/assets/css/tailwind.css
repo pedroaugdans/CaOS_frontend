@@ -1518,6 +1518,11 @@ body {
   background-color: rgb(225 245 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-3{
+  --tw-bg-opacity: 1;
+  background-color: rgb(200 240 255 / var(--tw-bg-opacity));
+}
+
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(55 88 249 / var(--tw-bg-opacity));
@@ -3168,55 +3173,6 @@ body {
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 }
-
-
-
-/****************************************/
-/*Subitem container and box definitions */
-/****************************************/
-/* Container for the boxes */
-.item-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: flex-start; /* Changed back to flex-start */
-  padding-bottom: 2rem;
-}
-
-.main-text-box, .comment-box {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-}
-
-.main-text-box {
-  flex: 1 1 100%;
-  background-color: white;
-  border: 1px solid #e0e0e0;
-}
-
-.comment-box {
-  flex: 1 1 100%;
-  background-color: #e6f3ff;
-}
-
-@media (min-width: 640px) {
-  .item-container {
-    flex-wrap: nowrap;
-  }
-  .main-text-box {
-    flex: 1 1 65%;
-  }
-  .comment-box {
-    flex: 0 0 35%;
-  }
-}
-
-
-
-/*End */
 
 @media (min-width: 1140px){
   .xl\:-mx-4{
