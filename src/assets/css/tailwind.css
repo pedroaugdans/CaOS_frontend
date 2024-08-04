@@ -662,6 +662,169 @@ body {
   margin-bottom: 22px;
 }
 
+/* 
+----CAOS definitions--------
+
+******** Hero styles ***********
+/* Custom styles */
+/* Custom styles */
+#home {
+  height: 100vh;
+  width: 100vw;
+}
+
+#home .container {
+  height: 100%;
+}
+
+.bg-image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .bg-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .bg-image {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.bg-icons {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 80 104 / var(--tw-bg-opacity));
+}
+
+.text-focus {
+  --tw-text-opacity: 1;
+  color: rgb(2 71 92 / var(--tw-text-opacity));
+}
+
+
+/*Buttons*/
+/* Custom color for button background */
+.bg-custom-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 80 104 / var(--tw-bg-opacity));
+}
+
+/* Text color for buttons */
+.text-custom-blue {
+  --tw-text-opacity: 1;
+  color: rgb(0 80 104 / var(--tw-text-opacity));
+}
+
+/* Hover styles for buttons */
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-custom-blue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 80 104 / var(--tw-text-opacity));
+}
+
+/* Increased gap between buttons */
+.gap-40 {
+  gap: 10rem;
+}
+
+/*Feature icons*/
+/* Assuming your images have a class 'feature-image' */
+
+.icon-background {
+  height: 100px; /* Adjusted to half */
+  width: 100px;  /* Adjusted to half */
+}
+
+.icon-svg {
+  width: 100px; /* Consistent icon size */
+  height: 100px;
+}
+
+.icon-svg-2 {
+  width: 100px; /* Consistent icon size */
+  height: 100px;
+}
+
+
+
+
+/*footer*/
+/* Custom color */
+.bg-custom-blue {
+  background-color: #005068ff;
+}
+
+/* Text color */
+.text-light {
+  color: #e0e0e0;
+}
+
+/* Hover effects */
+.hover\:text-white:hover {
+  color: #ffffff;
+}
+
+/* Transitions for smooth hover effects */
+.transition-colors {
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+
+
+
+/*
+************************************** end caos definitions
+*/
 .sr-only{
   position: absolute;
   width: 1px;
